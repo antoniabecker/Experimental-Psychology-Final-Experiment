@@ -29,75 +29,49 @@ const intro = babeViews.view_generator('intro', {
             The experiment will take about 20 minutes to complete. Please concentrate on the task and make sure that you will not be distracted.
             <br />
             <br />
-            Click on the button below to receive instructions.`,
-    buttonText: 'Receive instructions'
+            Before the actual experiment we ask you to complete a short vision test.
+            <br />
+            <br />
+            Click on the button below to start with the test.`,
+    buttonText: 'start test'
+});
+
+
+// For most tasks, you need instructions views
+// instructions for first part of the experiment
+const instructions_1 = babeViews.view_generator('instructions', {
+    trials: 1,
+    name: 'instructions_1',
+    title: 'Instructions',
+    text:  `Thank you.
+            <br />
+            <br />
+            This experiment is divided into two experimental blocks.
+            <br />
+            <br />
+            During this first part, you will be shown pictures of artworks.
+            For each picture, you are asked to rate how much you like the picture on a scale from 1 to 7.
+            <br />
+            <br />
+            If you <strong>like</strong> the picture, please choose a <strong>higher number</strong>. If you <strong>dislike</strong> the picture, please indicate this by choosing a <strong>lower number</strong>.`,
+    buttonText: 'start experiment'
 });
 
 // For most tasks, you need instructions views
-const instructions = babeViews.view_generator('instructions', {
+// instructions for the second part of the experiment
+const instructions_2 = babeViews.view_generator('instructions', {
     trials: 1,
-    name: 'instructions',
-    title: 'General Instructions',
-    text:  `Please be concentrated while completing the task.
+    name: 'instructions_2',
+    title: 'Instructions',
+    text:  `Great! Now the first part is over.
             <br />
             <br />
-            You will be shown pictures.
+            For the second part, you will again be shown pictures of artworks.
+            This time, please rate how well you can <strong>detect objects</strong> within the picture on a scale from 1 to 7.
+            This can e.g. be detecting faces, objects, gestalt forms etc. 
             <br />
             <br />
-            Your first task is, to rate how much you like the picture. For this, you'll be shown buttons <strong>from 1 to 7</strong>.
-            <br />
-            <br />
-            If you <strong>like</strong> the picture, please choose a <strong>higher number</strong>. If you <strong>dislike</strong> the picture, please indicate this by choosing a <strong>lower number</strong>.
-            <br />
-            <br />
-            In the second round you'll be shown the images again. 
-            <br />
-            <br />
-            This time, please indicate how much you much you can detect in the picture. This can e.g. be detecting faces, objects, forms etc.
-            <br />
-            <br />
-            You will be shown buttons <strong>from 1 to 7</strong> again. 
-            <br />
-            Please indicate a <strong>high detectability</strong> with a <strong>higher number</strong> and a <strong>low detecability</strong> with a <strong>lower number</strong>.
-            <br />
-            <br />
-            Now start with a short practice session.`,
-    buttonText: 'go to practice'
-});
-
-// For most tasks, you need instructions views
-const final_instructions_1 = babeViews.view_generator('instructions', {
-    trials: 1,
-    name: 'final_instructions_1',
-    title: 'Final Instructions',
-    text:  `Now the practive trials are finished. Next start the "real" experiment!
-            Please be concentrated while completing the task.
-            <br />
-            <br />
-            You will have to rate how much you like a picture that is shown to you.
-            <br />
-            <br />
-            <strong>Remember:</strong> 
-            <br />
-            If you <strong>like</strong> the picture, choose a <strong>higher number</strong>. If you <strong>dislike</strong> the picture, please indicate this by a <strong>lower number<strong>.`,
-    buttonText: 'go to trials'
-});
-
-// For most tasks, you need instructions views
-const final_instructions_2 = babeViews.view_generator('instructions', {
-    trials: 1,
-    name: 'final_instructions_2',
-    title: 'Final Instructions',
-    text:  `Now the first task is over. Next start the second task!
-            Please be concentrated while completing the task.
-            <br />
-            <br />
-            You will now have to rate how much you you can detect in a picture that is shown to you.
-            <br />
-            <br />
-            <strong>Remember:</strong> 
-            <br />
-            If you feel like the picture has a <strong>high detectability</strong>, choose a <strong>higher number</strong>. If you think the picture has a <strong>low detectability</strong>, please indicate this by a <strong>lower number<strong>.`,
+            If you feel like you can <strong>detect objects well</strong>, please choose a <strong>higher number</strong>. If not, please indicate this by choosing a <strong>lower number<strong>.`,
     buttonText: 'go to trials'
 });
 
@@ -157,42 +131,34 @@ const thanks = babeViews.view_generator('thanks', {
 */
 
 
-// Here, we initialize a keyPress view
+// Here, we initialize a rating scale view
+// this is for the 'like' condition 
 const rating_scale_like = babeViews.view_generator('rating_scale', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: trial_info.rating_scale_like.length,
+    // HERE: delete the "2, //" after testing: this is only for not having to rate all pictures in test phase
+    trials: 2, // trial_info.rating_scale_like.length,
     // name and trial_type should be identical to the variable name
     name: 'rating_scale_like',
     trial_type: 'rating_scale_like',
     data: _.shuffle(trial_info.rating_scale_like),
-   // pause: 500,
 
 });
 
-// Here, we initialize a keyPress view
+// Here, we initialize a rating scale view
+// this is for the 'detect' condition
 const rating_scale_detect = babeViews.view_generator('rating_scale', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: trial_info.rating_scale_detect.length,
+    // HERE: delete the "2, //" after testing: this is only for not having to rate all pictures in test phase
+    trials: 2, // trial_info.rating_scale_detect.length,
     // name and trial_type should be identical to the variable name
     name: 'rating_scale_detect',
     trial_type: 'rating_scale_detect',
     data: _.shuffle(trial_info.rating_scale_detect),
-   // pause: 500,
 
 });
 
-
-const practice_session = babeViews.view_generator('rating_scale', {
-    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: trial_info.rating_scale_practice.length,
-    // name and trial_type should be identical to the variable name
-    name: 'rating_scale_practice',
-    trial_type: 'rating_scale_practice',
-    data: _.shuffle(trial_info.rating_scale_practice),
-   // pause: 500,
-
-});
-
+// Here, we initialize a textbox input view
+// this is for the preceding colour vision test
 const colour_vision_test_session = babeViews.view_generator('textbox_input', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     trials: trial_info.colour_vision_test.length,
@@ -200,10 +166,11 @@ const colour_vision_test_session = babeViews.view_generator('textbox_input', {
     name: 'colour_vision_test',
     trial_type: 'colour_vision_test',
     data: trial_info.colour_vision_test,
-  //  pause: 500,
 
 });
 
+// Here, we initialize a textbox input view
+// this is for the preceding vision test
 const vision_test_session = babeViews.view_generator('textbox_input', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     trials: trial_info.vision_test.length,
@@ -211,7 +178,28 @@ const vision_test_session = babeViews.view_generator('textbox_input', {
     name: 'vision_test',
     trial_type: 'vision_test',
     data: trial_info.vision_test,
-  //  pause: 500,
+
+});
+
+// Here we initialize a rating scale view again
+// this is for asking the participants if they would consider themselves an expert in cubist artwork
+const ask_for_expertise = babeViews.view_generator('rating_scale', {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: trial_info.expertise.length,
+    // name and trial_type should be identical to the variable name
+    name: 'expertise',
+    trial_type: 'expertise',
+    data: trial_info.expertise,
+
+});
+
+// Here we initialize a forced_choice view
+// this is for asking the participants if they take the XPLab class
+const ask_xplab = babeViews.view_generator('forced_choice', {
+    trials: trial_info.xplab.length,
+    name: 'xplab',
+    trial_type: 'xplab',
+    data: trial_info.xplab,
 
 });
 
