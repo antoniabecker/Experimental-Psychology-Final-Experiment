@@ -68,7 +68,7 @@ const instructions_2 = babeViews.view_generator('instructions', {
             <br />
             For the second part, you will again be shown pictures of artworks.
             This time, please rate how well you can <strong>detect objects</strong> within the picture on a scale from 1 to 7.
-            This can e.g. be detecting faces, objects, gestalt forms etc. 
+            This can e.g. be detecting faces, objects, gestalt forms etc.
             <br />
             <br />
             If you feel like you can <strong>detect objects well</strong>, please choose a <strong>higher number</strong>. If not, please indicate this by choosing a <strong>lower number<strong>.`,
@@ -132,11 +132,11 @@ const thanks = babeViews.view_generator('thanks', {
 
 
 // Here, we initialize a rating scale view
-// this is for the 'like' condition 
+// this is for the 'like' condition
 const rating_scale_like = babeViews.view_generator('rating_scale', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     // HERE: delete the "2, //" after testing: this is only for not having to rate all pictures in test phase
-    trials: 2, // trial_info.rating_scale_like.length,
+    trials: trial_info.rating_scale_like.length,
     // name and trial_type should be identical to the variable name
     name: 'rating_scale_like',
     trial_type: 'rating_scale_like',
@@ -149,7 +149,7 @@ const rating_scale_like = babeViews.view_generator('rating_scale', {
 const rating_scale_detect = babeViews.view_generator('rating_scale', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     // HERE: delete the "2, //" after testing: this is only for not having to rate all pictures in test phase
-    trials: 2, //trial_info.rating_scale_detect.length,
+    trials: trial_info.rating_scale_detect.length,
     // name and trial_type should be identical to the variable name
     name: 'rating_scale_detect',
     trial_type: 'rating_scale_detect',
