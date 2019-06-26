@@ -26,7 +26,7 @@ const intro = babeViews.view_generator('intro', {
     text:   `Thank you for participating in our experiment!
             <br />
             <br />
-            The experiment will take about 20 minutes to complete. Please concentrate on the task and make sure that you will not be distracted.
+            The experiment will take about 15 minutes to complete. Please concentrate on the task and make sure that you will not be distracted.
             <br />
             <br />
             Before the actual experiment we ask you to complete a short vision test.
@@ -149,7 +149,7 @@ const rating_scale_like = babeViews.view_generator('rating_scale', {
 const rating_scale_detect = babeViews.view_generator('rating_scale', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     // HERE: delete the "2, //" after testing: this is only for not having to rate all pictures in test phase
-    trials: 2, // trial_info.rating_scale_detect.length,
+    trials: 2, //trial_info.rating_scale_detect.length,
     // name and trial_type should be identical to the variable name
     name: 'rating_scale_detect',
     trial_type: 'rating_scale_detect',
