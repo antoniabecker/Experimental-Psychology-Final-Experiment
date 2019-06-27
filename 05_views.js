@@ -141,6 +141,14 @@ const rating_scale_like = babeViews.view_generator('rating_scale', {
     name: 'rating_scale_like',
     trial_type: 'rating_scale_like',
     data: _.shuffle(trial_info.rating_scale_like),
+    progress_bar: {
+       in: [
+           rating_scale.like,    // 6 trials
+         rating_scale.detect,   // 10 trials
+      ],
+      style: "separate",
+      width: 120          // 120 pixels
+   }
 
 });
 
