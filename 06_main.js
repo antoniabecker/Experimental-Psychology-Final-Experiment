@@ -16,14 +16,15 @@ $("document").ready(function() {
         // You have to specify all views you want to use in this experiment and the order of them
         views_seq: [
             intro,
-            colour_vision_test_session,
-            vision_test_session,
+            colourVisionTestSession1,
+            colourVisionTestSession2,
+            visionTestSession,
             instructions_1,
-            rating_scale_like,
+            ratingScaleLike,
             instructions_2,
-            rating_scale_detect,
-            ask_for_expertise,
-            ask_xplab,
+            ratingScaleDetect,
+            askForExpertise,
+            askXplab,
             post_test,
             thanks,
         ],
@@ -42,8 +43,8 @@ $("document").ready(function() {
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
-                rating_scale_like,
-                rating_scale_detect,
+                ratingScaleLike.name,
+                ratingScaleDetect.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
             style: "separate",

@@ -3,7 +3,7 @@
 
 const trial_info = {
     // colour vision test with ishihara test plates
-    colour_vision_test: [
+    colourVisionTest1: [
         {
             question: "Which number do you see here?",
             picture: "vision/ishihara.png",
@@ -11,6 +11,8 @@ const trial_info = {
             min_chars: 0,
             expected: 74
         },
+    ],
+    colourVisionTest2: [
         {
             question: "Which number do you see here?",
             picture: "vision/ishihara2.jpg",
@@ -20,7 +22,7 @@ const trial_info = {
         },
     ],
     // vision test with Snellen Chart
-    vision_test: [
+    visionTest: [
         {
             question: "Please make sure you are one arm-length away from your computer screen. Write the letters from line 7 (below the green line) into the box below without tabs or spaces in between (just the letters).",
             picture: "vision/Snellen_chart.jpg",
@@ -46,7 +48,7 @@ const trial_info = {
         },
     ],
     // 120 pictures with artworks, participants rate whether they like it or not
-    rating_scale_like: [
+    ratingScaleLike: [
         {
             question: "How much do you like this picture?",
             picture: "images/001.jpg",
@@ -1251,7 +1253,7 @@ const trial_info = {
 
     // same 120 pictures again, asking participants about how well they can detect objects within the picture
 
-    rating_scale_detect: [
+    ratingScaleDetect: [
         {
             question: "How well can you detect objects within this artwork?",
             picture: "images/001.jpg",
@@ -1259,7 +1261,8 @@ const trial_info = {
             optionRight: 'very',
             picture_number: 1,
             artist: 'B',
-            date: 1909
+            date: 1909,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1268,7 +1271,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 2,
             artist: 'B',
-            date: 1909
+            date: 1909,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1277,7 +1281,8 @@ const trial_info = {
             optionRight: 'very',
             picture_number: 3,
             artist: 'B',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1286,7 +1291,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 4,
             artist: 'B',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1295,7 +1301,8 @@ const trial_info = {
             optionRight: 'very',
             picture_number: 5,
             artist: 'B',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1304,7 +1311,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 6,
             artist: 'B',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1313,7 +1321,8 @@ const trial_info = {
             optionRight: 'very',
             picture_number: 7,
             artist: 'B',
-            date: 1913
+            date: 1913,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1322,7 +1331,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 8,
             artist: 'B',
-            date: 1909
+            date: 1909,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1331,7 +1341,8 @@ const trial_info = {
             optionRight: 'very',
             picture_number: 9,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1340,7 +1351,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 10,
             artist: 'P',
-            date: 1912
+            date: 1912,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1349,7 +1361,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 11,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1358,7 +1371,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 12,
             artist: 'P',
-            date: 1909
+            date: 1909,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1367,7 +1381,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 13,
             artist: 'P',
-            date: 1912
+            date: 1912,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1376,7 +1391,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 14,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1385,7 +1401,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 15,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1394,7 +1411,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 16,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1403,7 +1421,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 17,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1412,7 +1431,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 18,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1421,7 +1441,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 19,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1430,7 +1451,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 20,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1439,7 +1461,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 21,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1448,7 +1471,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 22,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1457,7 +1481,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 23,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1466,7 +1491,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 24,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1475,7 +1501,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 25,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1484,7 +1511,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 26,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1493,7 +1521,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 27,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1502,7 +1531,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 28,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1511,7 +1541,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 29,
             artist: 'P',
-            date: 1912
+            date: 1912,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1520,7 +1551,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 30,
             artist: 'P',
-            date: 1912
+            date: 1912,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1529,7 +1561,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 31,
             artist: 'P',
-            date: 1909
+            date: 1909,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1538,7 +1571,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 32,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1547,7 +1581,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 33,
             artist: 'B',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1556,7 +1591,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 34,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1565,7 +1601,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 35,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1574,7 +1611,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 36,
             artist: 'B',
-            date: 1908
+            date: 1908,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1583,7 +1621,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 37,
             artist: 'B',
-            date: 1909
+            date: 1909,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1592,7 +1631,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 38,
             artist: 'B',
-            date: 1910
+            date: 1910,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1601,7 +1641,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 39,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1610,7 +1651,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 40,
             artist: 'B',
-            date: 1912
+            date: 1912,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1619,7 +1661,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 41,
             artist: 'B',
-            date: 1908
+            date: 1908,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1628,7 +1671,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 42,
             artist: 'B',
-            date: 1909
+            date: 1909,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1637,7 +1681,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 43,
             artist: 'B',
-            date: 1909
+            date: 1909,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1646,7 +1691,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 44,
             artist: 'B',
-            date: 1910
+            date: 1910,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1655,7 +1701,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 45,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1664,7 +1711,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 46,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1673,7 +1721,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 47,
             artist: 'B',
-            date: 1909
+            date: 1909,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1682,7 +1731,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 48,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1691,7 +1741,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 49,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1700,7 +1751,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 50,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1709,7 +1761,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 51,
             artist: 'P',
-            date: 1913
+            date: 1913,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1718,7 +1771,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 52,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1727,7 +1781,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 53,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1736,7 +1791,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 54,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1745,7 +1801,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 55,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1754,7 +1811,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 56,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1763,7 +1821,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 57,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1772,7 +1831,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 58,
             artist: 'P',
-            date: 1914
+            date: 1914,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1781,7 +1841,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 59,
             artist: 'P',
-            date: 1909
+            date: 1909,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1790,7 +1851,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 60,
             artist: 'P',
-            date: 1912
+            date: 1912,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1799,7 +1861,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 61,
             artist: 'P',
-            date: 1909
+            date: 1909,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1808,7 +1871,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 62,
             artist: 'P',
-            date: 1912
+            date: 1912,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1817,7 +1881,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 63,
             artist: 'P',
-            date: 1914
+            date: 1914,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1826,7 +1891,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 64,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1835,7 +1901,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 65,
             artist: 'B',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1844,7 +1911,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 66,
             artist: 'B',
-            date: 1910
+            date: 1910,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1853,7 +1921,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 67,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1862,7 +1931,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 68,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1871,7 +1941,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 69,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1880,7 +1951,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 70,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1889,7 +1961,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 71,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1898,7 +1971,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 72,
             artist: 'G',
-            date: 1915
+            date: 1915,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1907,7 +1981,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 73,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1916,7 +1991,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 74,
             artist: 'G',
-            date: 1919
+            date: 1919,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1925,7 +2001,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 75,
             artist: 'G',
-            date: 1915
+            date: 1915,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1934,7 +2011,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 76,
             artist: 'G',
-            date: 1915
+            date: 1915,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1943,7 +2021,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 77,
             artist: 'G',
-            date: 1915
+            date: 1915,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1952,7 +2031,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 78,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1961,7 +2041,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 79,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1970,7 +2051,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 80,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1979,7 +2061,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 81,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1988,7 +2071,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 82,
             artist: 'G',
-            date: 1913
+            date: 1913,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -1997,7 +2081,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 83,
             artist: 'G',
-            date: 1912
+            date: 1912,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2006,7 +2091,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 84,
             artist: 'G',
-            date: 1912
+            date: 1912,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2015,7 +2101,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 85,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2024,7 +2111,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 86,
             artist: 'G',
-            date: 1913
+            date: 1913,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2033,7 +2121,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 87,
             artist: 'G',
-            date: 1913
+            date: 1913,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2042,7 +2131,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 88,
             artist: 'G',
-            date: 1916
+            date: 1916,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2051,7 +2141,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 89,
             artist: 'G',
-            date: 1913
+            date: 1913,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2060,7 +2151,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 90,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2069,7 +2161,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 91,
             artist: 'G',
-            date: 1915
+            date: 1915,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2078,7 +2171,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 92,
             artist: 'G',
-            date: 1919
+            date: 1919,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2087,7 +2181,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 93,
             artist: 'G',
-            date: 1919
+            date: 1919,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2096,7 +2191,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 94,
             artist: 'G',
-            date: 1917
+            date: 1917,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2105,7 +2201,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 95,
             artist: 'G',
-            date: 1917
+            date: 1917,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2114,7 +2211,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 96,
             artist: 'G',
-            date: 1913
+            date: 1913,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2123,7 +2221,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 97,
             artist: 'G',
-            date: 1917
+            date: 1917,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2132,7 +2231,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 98,
             artist: 'G',
-            date: 1917
+            date: 1917,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2141,7 +2241,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 99,
             artist: 'G',
-            date: 1916
+            date: 1916,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2150,7 +2251,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 100,
             artist: 'G',
-            date: 1916
+            date: 1916,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2159,7 +2261,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 101,
             artist: 'G',
-            date: 1915
+            date: 1915,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2168,7 +2271,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 102,
             artist: 'G',
-            date: 1915
+            date: 1915,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2177,7 +2281,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 103,
             artist: 'G',
-            date: 1916
+            date: 1916,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2186,7 +2291,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 104,
             artist: 'G',
-            date: 1915
+            date: 1915,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2195,7 +2301,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 105,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2204,7 +2311,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 106,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2213,7 +2321,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 107,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2222,7 +2331,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 108,
             artist: 'G',
-            date: 1914
+            date: 1914,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2231,7 +2341,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 109,
             artist: 'G',
-            date: 1913
+            date: 1913,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2240,7 +2351,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 110,
             artist: 'G',
-            date: 1912
+            date: 1912,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2249,7 +2361,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 111,
             artist: 'G',
-            date: 1915
+            date: 1915,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2258,7 +2371,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 112,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2267,7 +2381,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 113,
             artist: 'P',
-            date: 1910        },
+            date: 1910,
+            color: 'colored'        },
         {
             question: "How well can you detect objects within this artwork?",
             picture: "images/114.jpg",
@@ -2275,7 +2390,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 114,
             artist: 'B',
-            date: 1909
+            date: 1909,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2284,7 +2400,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 115,
             artist: 'P',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2293,7 +2410,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 116,
             artist: 'P',
-            date: 1911
+            date: 1911,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2302,7 +2420,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 117,
             artist: 'B',
-            date: 1910
+            date: 1910,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2311,7 +2430,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 118,
             artist: 'P',
-            date: 1913
+            date: 1913,
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2320,7 +2440,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 119,
             artist: 'B',
-            date: 1913
+            date: 1913,
+            color: 'colored'
         },
         {
             question: "How well can you detect objects within this artwork?",
@@ -2329,7 +2450,8 @@ const trial_info = {
             optionRight: "very",
             picture_number: 120,
             artist: 'P',
-            date: 1912
+            date: 1912,
+            color: 'monochrome'
         },
     ]
 

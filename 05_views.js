@@ -133,59 +133,71 @@ const thanks = babeViews.view_generator('thanks', {
 
 // Here, we initialize a rating scale view
 // this is for the 'like' condition
-const rating_scale_like = babeViews.view_generator('rating_scale', {
+const ratingScaleLike = babeViews.view_generator('rating_scale', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     // HERE: delete the "2, //" after testing: this is only for not having to rate all pictures in test phase
-    trials: trial_info.rating_scale_like.length,
+    trials: trial_info.ratingScaleLike.length,
     // name and trial_type should be identical to the variable name
-    name: 'rating_scale_like',
-    trial_type: 'rating_scale_like',
-    data: _.shuffle(trial_info.rating_scale_like),
+    name: 'ratingScaleLike',
+    trial_type: 'ratingScaleLike',
+    data: _.shuffle(trial_info.ratingScaleLike),
 
 });
 
 // Here, we initialize a rating scale view
 // this is for the 'detect' condition
-const rating_scale_detect = babeViews.view_generator('rating_scale', {
+const ratingScaleDetect = babeViews.view_generator('rating_scale', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
     // HERE: delete the "2, //" after testing: this is only for not having to rate all pictures in test phase
-    trials: trial_info.rating_scale_detect.length,
+    trials: trial_info.ratingScaleDetect.length,
     // name and trial_type should be identical to the variable name
-    name: 'rating_scale_detect',
-    trial_type: 'rating_scale_detect',
-    data: _.shuffle(trial_info.rating_scale_detect),
+    name: 'ratingScaleDetect',
+    trial_type: 'ratingScaleDetect',
+    data: _.shuffle(trial_info.ratingScaleDetect),
 
 });
 
 // Here, we initialize a textbox input view
 // this is for the preceding colour vision test
-const colour_vision_test_session = babeViews.view_generator('textbox_input', {
+const colourVisionTestSession1 = babeViews.view_generator('textbox_input', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: trial_info.colour_vision_test.length,
+    trials: 1,
     // name and trial_type should be identical to the variable name
-    name: 'colour_vision_test',
-    trial_type: 'colour_vision_test',
-    data: trial_info.colour_vision_test,
+    name: 'colourVisionTest1',
+    trial_type: 'colourVisionTest1',
+    data: trial_info.colourVisionTest1,
+
+});
+
+// Here, we initialize a textbox input view
+// this is for the preceding colour vision test
+const colourVisionTestSession2 = babeViews.view_generator('textbox_input', {
+    // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
+    trials: 1,
+    // name and trial_type should be identical to the variable name
+    name: 'colourVisionTest2',
+    trial_type: 'colourVisionTest2',
+    data: trial_info.colourVisionTest2,
 
 });
 
 // Here, we initialize a textbox input view
 // this is for the preceding vision test
-const vision_test_session = babeViews.view_generator('textbox_input', {
+const visionTestSession = babeViews.view_generator('textbox_input', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: trial_info.vision_test.length,
+    trials: 1,
     // name and trial_type should be identical to the variable name
-    name: 'vision_test',
-    trial_type: 'vision_test',
-    data: trial_info.vision_test,
+    name: 'visionTest',
+    trial_type: 'visionTest',
+    data: trial_info.visionTest,
 
 });
 
 // Here we initialize a rating scale view again
 // this is for asking the participants if they would consider themselves an expert in cubist artwork
-const ask_for_expertise = babeViews.view_generator('rating_scale', {
+const askForExpertise = babeViews.view_generator('rating_scale', {
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: trial_info.expertise.length,
+    trials: 1,
     // name and trial_type should be identical to the variable name
     name: 'expertise',
     trial_type: 'expertise',
@@ -195,8 +207,8 @@ const ask_for_expertise = babeViews.view_generator('rating_scale', {
 
 // Here we initialize a forced_choice view
 // this is for asking the participants if they take the XPLab class
-const ask_xplab = babeViews.view_generator('forced_choice', {
-    trials: trial_info.xplab.length,
+const askXplab = babeViews.view_generator('forced_choice', {
+    trials: 1,
     name: 'xplab',
     trial_type: 'xplab',
     data: trial_info.xplab,
