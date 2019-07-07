@@ -1612,7 +1612,7 @@ const trial_info = {
             picture_number: 36,
             artist: 'B',
             date: 1908,
-            color: 'colored'
+            color: 'monochrome'
         },
         {
             question: "How well can you detect objects within this artwork?",
